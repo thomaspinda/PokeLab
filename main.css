@@ -1,0 +1,23 @@
+#main{
+    text-align: center;
+    padding: 40px;
+    border-color: black;
+    border-style: dashed;
+    font-family:sans-serif;
+    align-items: center;
+    margin: 20%;
+}
+#entrenadordiv{
+    text-align: left;
+    margin: auto;
+    border-style:solid;
+    border-color: black;
+    display: grid;
+    width: 50%;
+}
+#regiondiv{
+    display: grid;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
