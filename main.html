@@ -1,42 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="main.css">
-    <title>title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro Pokémon</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <div id="main">
-        <h1>Elije tu pokémon inicial</h1>
-        <div id="entrenadordiv">
-            <label for="entrenador">Nombre del entrenador</label>
-            <input type="text" id="entrenador">
-        </div>
-
-        <div id="regiondiv">
-            <label for="region">Selecciona una región</label>
-            <select id="region">
-                <option value="Null"></option>
-                <option value="Kanto">Kanto</option>
-                <option value="Jotho">Jotho</option>
-                <option value="Hoen">Hoen</option>
-                
-            </select>
-        </div>
-        <div id="pokemondiv">
-            <div>
-                <p>Pokémon 1</p>
-            </div>
-            <div>
-                <p>Pokémon 2</p>
-            </div>
-            <div>
-                <p>Pokémon 3</p>
-            </div>
-        </div>
-
-
-        
-    </div>
+ <body>
+  <h1>Registro de Entrenadores Pokémon</h1>
+  <div class="form">
+    <input type="text" id="name" placeholder="Nombre del entrenador"/>
+    <select id="region">
+      <option value="">Selecciona una región</option>
+      <option value="kanto">Kanto</option>
+      <option value="johto">Johto</option>
+      <option value="hoenn">Hoenn</option>
+    </select>
+    <div id="starters"></div>
+    <button id="registerBtn">Registrar</button>
+    <button id="resetBtn">Reiniciar</button>
+  </div>
+  <ul id="trainerList"></ul>
+  <script src="script.js"></script>
 </body>
 </html>
